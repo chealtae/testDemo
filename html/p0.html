@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>化妆品商城</title>
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="../css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/ddsmoothmenu.js"></script>
+
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "menu", 
+	orientation: 'h', 
+	classname: 'ddsmoothmenu', 
+	
+	contentsource: "markup" 
+})
+
+</script>
+<script language="javascript" type="text/javascript">
+	window.addEvents({
+		'domready': function(){
+			
+			new SlideItMoo({
+						overallContainer: 'SlideItMoo_outer',
+						elementScrolled: 'SlideItMoo_inner',
+						thumbsContainer: 'SlideItMoo_items',		
+						itemsVisible: 5,
+						elemsSlide: 2,
+						duration: 200,
+						itemsSelector: '.SlideItMoo_element',
+						itemWidth: 171,
+						showControls:1});
+		},
+		
+	});
+
+	function clearText(field)
+	{
+		if (field.defaultValue == field.value) field.value = '';
+		else if (field.value == '') field.value = field.defaultValue;
+	}
+</script>
+
+<link href="../js/niutuku.css" type="text/css" rel="stylesheet">	
+<script src="../js/jquery-1.2.6.pack.js" type="text/javascript"></script>
+<script src="../js/niutuku.base.js" type="text/javascript"></script>
+
+<script src="../js/niutuku.lib.js" type="text/javascript"></script>
+
+<script src="../js/niutuku.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	$(function(){			
+	   $(".jqzoom").jqueryzoom({
+			xzoom:400,
+			yzoom:400,
+			offset:10,
+			position:"right",
+			preload:1,
+			lens:1
+		});
+		$("#spec-list").jdMarquee({
+			deriction:"left",
+			width:350,
+			height:56,
+			step:2,
+			speed:4,
+			delay:10,
+			control:true,
+			_front:"#spec-right",
+			_back:"#spec-left"
+		});
+		$("#spec-list img").bind("mouseover",function(){
+			var src=$(this).attr("src");
+			$("#spec-n1 img").eq(0).attr({
+				src:src.replace("\/n5\/","\/n1\/"),
+				jqimg:src.replace("\/n5\/","\/n0\/")
+			});
+			$(this).css({
+				"border":"2px solid #ff6600",
+				"padding":"1px"
+			});
+		}).bind("mouseout",function(){
+			$(this).css({
+				"border":"1px solid #ccc",
+				"padding":"2px"
+			});
+		});				
+	})
+	</script>
+
+
+
+
+
+
+<style type="text/css">
+.on{margin:5px;border:1px solid #F60;filter:alpha(Opacity=100)}
+.off{margin:5px;border:1px solid #CCC;filter:alpha(Opacity=20)}
+</style>
+
+<style type="text/css">
+<!--
+.STYLE1 {
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+body,td,th {
+	font-size: 12px;
+	color: #666666;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+#buyandbuy .nam {
+	margin-left: 0px;
+}
+#buyandbuy dd {
+	margin-left: 0px;
+}
+-->
+</style>
+
+<style type="text/css">
+<!--
+.STYLE1 {color: #999999}
+
+.off {margin:5px;border:1px solid #CCC;filter:alpha(Opacity=20)}
+.off1 {margin:5px;border:1px solid #CCC;filter:alpha(Opacity=20)}
+.off1 {margin:5px;border:1px solid #CCC;filter:alpha(Opacity=20)}
+.STYLE3 {color: #FF3300}
+.STYLE5 {color: #FF3300; font-weight: bold; }
+-->
+</style>
+</head>
+
+<body id="home">
+
+<div id="wrapper">
+	<div id="header">
+    	<div id="site_title">
+   	  </div>
+    	<a name="top" id="top"></a>
+        
+        <div id="header_right">
+            <ul id="language">
+                <li><a href="login.html">登录</a></li>
+                <li><a href="register.html">注册</a></li>
+                <li><a href="mycart.html">我的购物车</a></li>
+                <li><a href="xiugai.html">修改密码</a></li>
+            </ul>
+            <div class="cleaner"></div>
+            <div id="search">
+                <form action="products.html" method="get">
+                  <input type="text" value="搜索宝贝" name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                  <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+              </form>
+            </div>
+      </div> 
+    </div> 
+    
+    <div id="menu" class="ddsmoothmenu">
+         <ul>
+        <li><a href="../index.html" >首页</a></li>
+        <li><a href="products.html" class="selected" >产品分类</a>
+            <ul >
+              <li><a href="#">新品热卖</a></li>
+              <li><a href="#">当季热卖</a><a href="#">面霜</a><a href="#">护手霜</a> <a href="#">唇膏</a> <a href="#">身体乳</a> <a href="#">BB霜</a> </li>
+              <li><a href="#">iope雪花秀</a> </li>
+              <li><a href="#">laneige兰芝</a></li>
+              <li><a href="#">espoir</a></li>
+              <li><a href="#">悦诗风吟</a></li>
+              <li><a href="#">爱丽小屋</a></li>
+            </ul>
+        </li>
+        <li><a href="#">iope雪花秀</a> </li>
+        <li><a href="#">laneige兰芝</a></li>
+        <li><a href="#">espoir</a></li>
+        <li><a href="#">悦诗风吟</a></li>
+        <li><a href="#">爱丽小屋</a></li>
+      </ul>
+        <br style="clear: left" />
+  </div> 
+    
+    <div id="main_top"></div>
+    <div id="main">
+      <div id="sidebar">
+        	<h3>宝贝分类</h3>
+            <ul class="sidebar_menu">
+			    <li><a href="#">新品热卖</a></li>
+                <li><a href="#">当季热卖</a></li>	
+			  <ul>
+				<li><a href="#">面霜</a></li>
+				<li><a href="#">护手霜</a></li>
+				<li><a href="#">唇膏</a></li>
+				<li><a href="#">身体乳</a></li>
+				<li><a href="#">BB霜</a></li>
+				
+			  </ul>			
+                <li><a href="#">iope雪花秀</a><a href="#"></a></li>
+                <li><a href="#">laneige兰芝</a><a href="#"></a></li>				
+            	<li><a href="#">espoir</a><a href="#"></a></li>
+              <li><a href="#">悦诗风吟</a><a href="#"></a></li>     
+                <li><a href="#">爱丽小屋</a></li>				
+            </ul>
+            <h3>热销宝贝</h3>
+            <table width="100%" border="0">
+              <tr>
+                <td><a href="#" ><img src="../images/gallery/01.jpg" width="60" height="60" align="left" />正品 tonymoly 魔法森林蜗牛面膜贴 美白保湿 祛<br />
+                ¥25.00<br />
+                已收藏7672笔</a></td>
+              </tr>
+              <tr>
+                <td><a href="#"></a> </td>
+              </tr>
+              <tr>
+                <td><img src="../images/gallery/02.jpg" width="60" height="60" align="left" /><a href="#">现货 正品 LANEIGE兰芝新概念BB水凝霜 气垫粉<br />
+¥120.00<br />
+已收藏5287笔</a></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td><img src="../images/gallery/03.jpg" width="60" height="50" align="left" /><a href="#">现货 HOT&amp;FACE 小V脸瘦脸提拉紧致去水肿面膜<br />
+                ¥48.00<br />
+                　　　　　已收藏4581笔<br />
+                </a></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td><img src="../images/gallery/04.jpg" width="60" height="60" align="left" /><a href="#">现货 韩国代购正品 雪花秀 滋阴水 乳液125ml两<br />
+                ¥579.00<br />
+                已收藏3388笔</a></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td><img src="../images/gallery/05.jpg" width="60" height="60" align="left" /><a href="#">韩国代购正品 missha 谜尚迷尚 幻金凝彩完美抗<br />
+                ¥148.00<br />
+                已收藏2743笔</a></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td><img src="../images/gallery/06.jpg" width="60" height="60" align="left" /><a href="#">5片包邮 韩国Tonymoly魔法森林 蛇毒精华抗皱保<br />
+¥27.00<br />
+已收藏2103笔</a></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td><img src="../images/gallery/07.jpg" width="60" height="60" align="left" />
+                  <p><a href="#">3只包邮 代购正品 peripera 猫女染色液体<br />
+                  ¥45.00<br />
+                已收藏1858笔</a></p>
+                </td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+            <h3>搜索宝贝</h3>
+            <div id="newsletter">
+                <form action="products.html" method="get">
+                  <input type="text" value="输入宝贝名称" name="email_newsletter" id="email_newsletter" title="email_newsletter" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                  <input type="submit" name="subscribe" value="搜索" alt="Subscribe" id="subscribebtn" title="Subscribe" class="subscribebtn"  />
+              </form>
+                <div class="cleaner"></div>
+            </div>
+      </div> 
+        
+        <div id="content">
+          <table width="100%" border="0" align="center" cellpadding="10" cellspacing="1" bgcolor="#CCCCCC">
+            <tr>
+              <td width="52%" bgcolor="#FFFFFF"><div id="preview">
+                  <div class="jqzoom" id="spec-n1" ><img height="350" src="../images/img01.jpg" jqimg="images/img01.jpg" width="350" alt="" /> </div>
+                <div id="spec-n5">
+                    <div class="control" id="spec-left"> <img src="../images/left.gif" /> </div>
+                  <div id="spec-list">
+                    <div style="position:relative;overflow:hidden;z-index:1;width:300px;height:56px;">
+                      <ul class="list-h" style="width: 350px; overflow: hidden; position: absolute; left: 0px; top: 0px; margin-top: 0px; margin-left: 10px;">
+                        <li><img src="../images/img01.jpg" style="border: 1px solid rgb(204, 204, 204); padding: 2px;" /> </li>
+                        <li><img src="../images/img02.jpg" style="border: 1px solid rgb(204, 204, 204); padding: 2px;" /> </li>
+                        <li><img src="../images/img03.jpg" style="border: 1px solid rgb(204, 204, 204); padding: 2px;" /> </li>
+                        <li><img src="../images/img04.jpg" style="border: 1px solid rgb(204, 204, 204); padding: 2px;" /> </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+                  </div>
+                    <div class="control" id="spec-right"> <img src="../images/right.gif" /> </div>
+                </div>
+              </div></td>
+              <td width="48%" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="35" colspan="2" align="left"><strong>包邮 IOPE亦博气垫粉底霜 液体湿粉饼 隔离 bb霜 防晒乳 送替换装</strong></td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td height="35" colspan="2">价格：220 元 </td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td height="35" colspan="2">会员价：<span class="STYLE5">180
+                        <label>元</label>
+                    </span>                      <strong>
+                    <label></label>
+                    </strong>                    <label></label></td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td height="35" colspan="2">深圳 |至 首尔华 快递: 25 </td>
+                    <td rowspan="2">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td height="35" colspan="2">30天售出：<span class="STYLE3">304</span>件</td>
+                  </tr>
+                  <tr>
+                    <td height="35" colspan="2">产品颜色：
+                      <select name="select3">
+                          <option value="1">粉色</option>
+                          <option value="3">红色</option>
+                          <option value="2">黑色</option>
+                          <option value="4">蓝色</option>
+                      </select></td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td height="35" colspan="2">评　　价：4.8分 | 449条评价</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td height="35"></td>
+                    <td>
+                        <div id="touxiang">
+                        购买数量：
+                        <label>
+                        <input name="textarea" type="text" value="" size="5" />
+件</label></td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td height="35" colspan="2"><label><a href="checkout.html" class="more">点击购买</a> <a href="mycart.html" class="more">加入购物车</a></label></td>
+                    <td>&nbsp;</td>
+                  </tr>
+              </table></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+          <table width="100%" border="0" cellpadding="10" cellspacing="1" bgcolor="#CCCCCC">
+            <tr>
+              <td width="33%" align="center" bgcolor="#EEEEEE">宝贝详情</td>
+              <td width="33%" align="center" bgcolor="#EEEEEE">宝贝评价</td>
+              <td width="33%" align="center" bgcolor="#EEEEEE">宝贝成交</td>
+            </tr>
+            <tr>
+              <td colspan="3" bgcolor="#FFFFFF"><div>
+                <div>IOPE色号百科：</div>
+                <div> </div>
+                <div> 4月升级版 </div>
+                <div> </div>
+                <div>
+                  <div>新款N21象牙色清透型=紫盒21#象牙色超轻透型</div>
+                  <div> </div>
+                  <div>新款N23象牙色清透型=紫盒23#自然色超轻透型</div>
+                  <div> </div>
+                </div>
+                <div> </div>
+                <div> </div>
+                <div>新款C21象牙色遮瑕保湿型=金色盒21#象牙色遮瑕保湿型</div>
+                <div> </div>
+                <div>新款C23自然色遮瑕保湿型=金色盒23#自然色遮瑕保湿型</div>
+                <div> </div>
+                <div> </div>
+                <div> </div>
+                <div>紫色盒 轻薄型現在升级为4月份N21 N23</div>
+                <div> </div>
+                <div>金色盒 遮瑕好现在升级为 4月份C21 C32盒子是深黑蓝色的噢 </div>
+                <div> </div>
+               
+                <div> </div>
+              </div>
+                <div> </div>
+                <div> </div>
+                <div>回馈老顾客包圆通哈  新疆 西藏 青海 港澳台不参加哈 抱歉</div>
+                <div>紧跟韩国 老款21 已经换包装了哈，外包装盒子变成紫色了哈 里面不变化 因为老包装还有大量库存 并且日期也是12年的 超新鲜 所以会随机发货哈  请知悉！！</div>
+                <div> </div>
+              
+                <div> </div>
+              
+                <div>IOPE超保湿气垫型防晒粉底</div>
+                <p>[商品名称]IOPE/亦博 气垫粉底霜</p>
+                <p>[商品规格]正装15g，替换装15g　　</p>
+                <p>[商品产地]韩国</p>
+                <p>[商品包装]有盒</p>
+                <p>[商品色号]</p>
+                <p>21＃象牙色，适合肤色白皙的姑娘</p>
+                <p>23＃自然色，适合肤色正常的姑娘</p>
+                <p align="left">一盒除了正装 还会送15g的替换装 所以价格相当于30g的价格了 很实惠</p>
+                <p>[商品介绍]</p>
+                <p>看似是粉饼状，其实涂起来是液体粉底的质地，</p>
+                <p> 配上魔力粉扑，服贴度和自然度要好于一般的粉底，</p>
+                <p>之前打个隔离，然后再涂它，效果很自然，</p>
+                <p>这款保湿度也不错，</p>
+                <p>比一般的粉质的粉饼要保湿，服贴度好，不用担心会像粉质粉饼那样浮妆，</p>
+                <p>价格也并不贵，一盒是正装+替换，就是2个哦！</p>
+                <p>全新科技，世界首创气 垫型装置。含35%水分的美白精华素，持久保持肌肤水分。阻热清凉容器（采用阻断外部热空气，增加产品清凉效果的阻热容器气泵（AIR-PUMP）技术防止推泥现象。</p>
+                <p>（涂上时气垫的气泵作用是产品含有空气层，彩妆后没有推泥现象让您始终保持清爽彩妆）</p>
+                <p> 使用过的人百分百满意哦，韩国11年新品，超多韩国MM推荐产品！</p>
+                <p>它完全颠覆了我对传统粉底的看法</p>
+                <p>传统粉底厚重 难推开 保湿相对差</p>
+                <p>但这款气垫粉底霜</p>
+                <p>初次试用也感觉到了保湿很好 而且很贴服 完全不会让人觉得妆容分两层</p>
+                <p>或是让人觉得很强的妆感 用上去就是很清透的样子</p>
+                <p>喜欢裸妆的MM一定要hold不住了 囧</p>
+                <p>一盒除了正装 还会送15g的替换装 所以价格相当于30g的价格了 很实惠</p>
+                <p>下面给大家翻译了一下官网的介绍</p>
+                <p> 美白+防晒+隔离+舒缓效果于一体的4合1防晒粉底  spf50+/pa+++</p>
+                <p>防汗复合体形成具有伸缩性的肌肤保护膜</p>
+                <p>宝石矿泉水的高保湿和定妆效果</p>
+                <p>气垫粉和皮质分解酵素粉(LLCP)賦予自然的完妝效果</p>
+                <p> </p>
+                <p align="left">色号及色彩名称：</p>
+                <p> </p>
+                <p align="left"> </p>
+                <p>20#浅白色（中国白肌肤MM 最喜欢）适合偏白的肌肤</p>
+                <p> </p>
+                <p>21#象牙白（中国MM最喜欢的颜色）：光彩靓丽的肌肤表现（可用作粉底）</p>
+                <p> </p>
+                <p>23#自然色（亚洲MM最喜欢的颜色）：健康自然的肌肤表现（可用作粉底）</p>
+                <p> </p>
+                <p> </p>
+                <p> </p>
+                <p> </p>
+                <p> </p>
+                <p> </p>
+                <p> </p>
+               
+              <p> </p></td>
+            </tr>
+            <tr>
+              <td colspan="3" bgcolor="#FFFFFF">同类宝贝推荐</td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+        <div class="col col_14 product_gallery">
+            	<a href="#"><img src="../images/product/07.jpg" alt="Product 07" border="0" /></a>
+                <h3><a href="#">现货 韩国代购正品 雪花秀 滋阴水 乳液125ml两件套装礼盒 2件套</a></h3>
+                <h3><span class="product_price">￥578.00</span> 已售：88件<br />
+                  <span class="product_price"><span class="STYLE1">评论</span>(167)</span><br />
+                </h3>
+          </div>        	
+            <div class="col col_14 product_gallery">
+            	<a href="#"><img src="../images/product/08.jpg" alt="Product 08" border="0" />                </a>
+            	<h3><a href="#">现货 张馨予推荐too cool for school彩妆早上好牛奶染色唇彩唇液</a></h3>
+                <h3><span class="product_price">￥39.00</span> 已售：81件<br />
+                <span class="product_price"><span class="STYLE1">评论</span>(118)</span></h3>
+          </div>        	
+            <div class="col col_14 product_gallery no_margin_right">
+            	<a href="#"><img src="../images/product/09.jpg" alt="Product 09" border="0" /></a>
+                <h3><a href="#">Laneige兰芝 雪纱防晒隔离霜30ML 防辐射 紫色 绿色 专柜正品代购</a></h3>
+                <h3><span class="product_price">￥115.00 </span>已售：101件<br />
+                <span class="product_price"><span class="STYLE1">评论</span>(112)</span></h3>
+          </div>        	
+      </div> <!-- END of content -->
+        <div class="cleaner"></div>
+  </div> <!-- END of main -->
+    
+    <div id="footer">
+      <div class="cleaner h40"></div>
+		<center>
+	  </center>
+    </div> 
+   
+</div>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>化妆品商城</title>
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="../css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/ddsmoothmenu.js">
+
+
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "menu", 
+	orientation: 'h', 
+	classname: 'ddsmoothmenu', 
+	
+	contentsource: "markup" 
+})
+
+</script>
+
+
+<script language="javascript" type="text/javascript">
+	window.addEvents({
+		'domready': function(){
+			
+			new SlideItMoo({
+						overallContainer: 'SlideItMoo_outer',
+						elementScrolled: 'SlideItMoo_inner',
+						thumbsContainer: 'SlideItMoo_items',		
+						itemsVisible: 5,
+						elemsSlide: 2,
+						duration: 200,
+						itemsSelector: '.SlideItMoo_element',
+						itemWidth: 171,
+						showControls:1});
+		},
+		
+	});
+
+	function clearText(field)
+	{
+		if (field.defaultValue == field.value) field.value = '';
+		else if (field.value == '') field.value = field.defaultValue;
+	}
+</script>
+
+<style type="text/css">
+<!--
+.STYLE1 {color: #999999}
+-->
+</style>
+</head>
+
+<body id="home">
+
+<div id="wrapper">
+	<div id="header">
+    	<div id="site_title">
+   	  </div>
+    	<a name="top" id="top"></a>
+        
+        <div id="header_right">
+            <ul id="language">
+                <li><a href="login.html">登录</a></li>
+                <li><a href="register.html">注册</a></li>
+                <li><a href="mycart.html">我的购物车</a></li>
+                 <li><a href="xiugai.html">修改密码</a></li>
+            </ul>
+            <div class="cleaner"></div>
+            <div id="search">
+                <form action="#" method="get">
+                  <input type="text" value="搜索宝贝" name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                  <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+                </form>
+            </div>
+      </div> 
+    </div> 
+    
+    <div id="menu" class="ddsmoothmenu">
+       <ul>
+        <li><a href="../index.html" >首页</a></li>
+        <li><a href="products.html" class="selected" >产品分类</a>
+            <ul >
+              <li><a href="#">新品热卖</a></li>
+              <li><a href="#">当季热卖</a><a href="#">面霜</a><a href="#">护手霜</a> <a href="#">唇膏</a> <a href="#">身体乳</a> <a href="#">BB霜</a> </li>
+              <li><a href="#">iope雪花秀</a> </li>
+              <li><a href="#">laneige兰芝</a></li>
+              <li><a href="#">espoir</a></li>
+              <li><a href="#">悦诗风吟</a></li>
+              <li><a href="#">爱丽小屋</a></li>
+            </ul>
+        </li>
+        <li><a href="#">iope雪花秀</a> </li>
+        <li><a href="#">laneige兰芝</a></li>
+        <li><a href="#">espoir</a></li>
+        <li><a href="#">悦诗风吟</a></li>
+        <li><a href="#">爱丽小屋</a></li>
+      </ul>
+    
+        <br style="clear: left" />
+  </div> 
+    
+    <div id="main_top"></div>
+    <div id="main">
+      <div id="sidebar">
+        	<h3>宝贝分类</h3>
+            <ul class="sidebar_menu">
+			    <li><a href="#">新品热卖</a></li>
+                <li><a href="#">当季热卖</a></li>	
+			  <ul>
+				<li><a href="#">面霜</a></li>
+				<li><a href="#">护手霜</a></li>
+				<li><a href="#">唇膏</a></li>
+				<li><a href="#">身体乳</a></li>
+				<li><a href="#">BB霜</a></li>
+				
+			  </ul>			
+                <li><a href="#">iope雪花秀</a><a href="#"></a></li>
+                <li><a href="#">laneige兰芝</a><a href="#"></a></li>				
+            	<li><a href="#">espoir</a><a href="#"></a></li>
+              <li><a href="#">悦诗风吟</a><a href="#"></a></li>     
+                <li><a href="#">爱丽小屋</a></li>				
+            </ul>
+            <h3>搜索宝贝</h3>
+            <div id="newsletter"> <form action="products.html" method="get">
+                  <input type="text" value="输入宝贝名称" name="email_newsletter" id="email_newsletter" title="email_newsletter" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                  <input type="submit" name="subscribe" value="搜索" alt="Subscribe" id="subscribebtn" title="Subscribe" class="subscribebtn"  />
+                </form>
+                <div class="cleaner"></div>
+            </div>
+      </div> 
+        
+        <div id="content">
+          <h2>确认提交订单</h2>
+          <h5><strong>收货信息</strong></h5>
+          <div class="col col_13 checkout">
+            <table width="100%" border="0">
+              <tr>
+                <td>省
+                  <label>
+                  <select name="select">
+                    <option value="1">北京</option>
+                    <option value="2">上海</option>
+                  </select>
+                市
+                <select name="select2">
+                  <option value="1">杭州</option>
+                  <option value="2">南京</option>
+                  </select>
+                区
+                <select name="select3">
+                  <option>福田区</option>
+                  </select>
+                邮政编码
+                <input type="text" name="textfield" />
+                </label></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>街道地址：
+                  <textarea name="textfield2" cols="50" rows="3"></textarea></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>收货人：
+                <input type="text" name="textfield3" /></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>电话：
+                <input type="text" name="textfield32" /></td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>手机：
+                <input type="text" name="textfield33" /></td>
+                <td>&nbsp;</td>
+              </tr>
+            </table>
+          </div>
+          <div class="cleaner h50"></div>
+          <h3>确认订单信息</h3>
+          <table width="700px" cellspacing="0" cellpadding="5">
+            <tr bgcolor="#CCCCCC">
+              <th width="220" align="left">宝贝图片</th>
+              <th width="180" align="left">宝贝详情</th>
+              <th width="100" align="center">数量</th>
+              <th width="60" align="right">单价 </th>
+              <th width="60" align="right">共计</th>
+              <th width="90"> </th>
+            </tr>
+            <tr>
+              <td><img src="../images/product/01.jpg" alt="image 01" /></td>
+              <td>包邮 IOPE亦博气垫粉底霜 液体湿粉饼 隔离 bb霜 防晒乳 送替换装</td>
+              <td align="center"><input name="text2" type="text" style="width: 20px; text-align: right" value="1" />              </td>
+              <td align="right"><span class="product_price">￥100.00</span></td>
+              <td align="right"><span class="product_price">￥100.00</span></td>
+              <td align="center"><a href="#"><img src="../images/remove_x.gif" alt="remove" /><br />
+                移除 </a> </td>
+            </tr>
+            <tr>
+              <td><img src="../images/product/02.jpg" alt="image 02" /> </td>
+              <td>正品 tonymoly 魔法森林蜗牛面膜贴 美白保湿 祛痘疤祛斑 5片包邮</td>
+              <td align="center"><input name="text2" type="text" style="width: 20px; text-align: right" value="1" />              </td>
+              <td align="right"><span class="product_price">￥200.00 </span></td>
+              <td align="right"><span class="product_price">￥200.00 </span></td>
+              <td align="center"><a href="#"><img src="../images/remove_x.gif" alt="remove" /><br />
+                移除</a> </td>
+            </tr>
+            <tr>
+              <td colspan="3" align="left"  height="40px">给卖家留言<br />
+                  <br />
+                <span class="col col_13 checkout">
+                <textarea name="text3" rows="6" style="width:300px;"></textarea>
+              </span></td>
+              <td align="right" >&nbsp;</td>
+              <td align="right" >&nbsp;</td>
+              <td ></td>
+            </tr>
+            <tr>
+              <td colspan="3" align="right"  height="40px">&nbsp;</td>
+              <td align="right" style="background:#ccc; font-weight:bold">总计</td>
+              <td align="right" style="background:#ccc; font-weight:bold"><span class="product_price">￥300.00</span></td>
+              <td style="background:#ccc; font-weight:bold"></td>
+            </tr>
+          </table>
+          <h4>&nbsp;</h4>
+          <p>
+            <input name="checkbox" type="checkbox" />
+            找人代付
+          
+            <input name="checkbox2" type="checkbox" />
+匿名购买          </p>
+          <table width="100%">
+            <tr>
+              <td height="80"><a href="#" class="more">确认支付</a></td>
+            </tr>
+          </table>
+        </div>
+        <!-- END of content -->
+        <div class="cleaner"></div>
+  </div> <!-- END of main -->
+    
+    <div id="footer">
+      <div class="cleaner h40"></div>
+		<center>
+	  </center>
+    </div> 
+   
+</div>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>

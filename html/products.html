@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>化妆品商城</title>
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="../css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/ddsmoothmenu.js">
+
+
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "menu", 
+	orientation: 'h', 
+	classname: 'ddsmoothmenu', 
+	
+	contentsource: "markup" 
+})
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="../style/default_blue.css"/>
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/ddsmoothmenu.js">
+
+
+<script language="javascript" type="text/javascript">
+	window.addEvents({
+		'domready': function(){
+			
+			new SlideItMoo({
+						overallContainer: 'SlideItMoo_outer',
+						elementScrolled: 'SlideItMoo_inner',
+						thumbsContainer: 'SlideItMoo_items',		
+						itemsVisible: 5,
+						elemsSlide: 2,
+						duration: 200,
+						itemsSelector: '.SlideItMoo_element',
+						itemWidth: 171,
+						showControls:1});
+		},
+		
+	});
+
+	function clearText(field)
+	{
+		if (field.defaultValue == field.value) field.value = '';
+		else if (field.value == '') field.value = field.defaultValue;
+	}
+</script>
+
+<style type="text/css">
+<!--
+.STYLE1 {color: #999999}
+table tr td{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+-->
+</style>
+</head>
+
+<body id="home">
+
+<div id="wrapper">
+	<div id="header">
+    	<div id="site_title">
+   	  </div>
+    	<a name="top" id="top"></a>
+        
+        <div id="header_right">
+            <ul id="language">
+                <li><a href="login.html">登录</a></li>
+                <li><a href="register.html">注册</a></li>
+                <li><a href="mycart.html">我的购物车</a></li>
+               
+                <li><a href="xiugai.html">修改密码</a></li>
+            </ul>
+            <div class="cleaner"></div>
+            <div id="search">
+                <form action="products.html" method="get">
+                  <input type="text" value="搜索宝贝" name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                  <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+              </form>
+            </div>
+      </div> 
+    </div>   <div id="menu" class="ddsmoothmenu">
+      <ul>
+        <li><a href="../index.html" >首页</a></li>
+        <li><a href="products.html" class="selected" >产品分类</a>
+            <ul >
+              <li><a href="#">新品热卖</a></li>
+              <li><a href="#">当季热卖</a><a href="#">面霜</a><a href="#">护手霜</a> <a href="#">唇膏</a> <a href="#">身体乳</a> <a href="#">BB霜</a> </li>
+              <li><a href="#">iope雪花秀</a> </li>
+              <li><a href="#">laneige兰芝</a></li>
+              <li><a href="#">espoir</a></li>
+              <li><a href="#">悦诗风吟</a></li>
+              <li><a href="#">爱丽小屋</a></li>
+            </ul>
+        </li>
+        <li><a href="#">iope雪花秀</a> </li>
+        <li><a href="#">laneige兰芝</a></li>
+        <li><a href="#">espoir</a></li>
+        <li><a href="#">悦诗风吟</a></li>
+        <li><a href="#">爱丽小屋</a></li>
+      </ul>
+      <br style="clear: left" />
+    </div><div id="main_top"></div>
+    <div id="main">
+     <div id="sidebar">
+        	<h3>宝贝分类</h3>
+            <ul class="sidebar_menu">
+			    <li><a href="#">新品热卖</a></li>
+                <li><a href="#">当季热卖</a></li>	
+			  <ul>
+				<li><a href="#">面霜</a></li>
+				<li><a href="#">护手霜</a></li>
+				<li><a href="#">唇膏</a></li>
+				<li><a href="#">身体乳</a></li>
+				<li><a href="#">BB霜</a></li>
+				
+			  </ul>			
+                <li><a href="#">iope雪花秀</a><a href="#"></a></li>
+                <li><a href="#">laneige兰芝</a><a href="#"></a></li>				
+            	<li><a href="#">espoir</a><a href="#"></a></li>
+              <li><a href="#">悦诗风吟</a><a href="#"></a></li>     
+                <li><a href="#">爱丽小屋</a></li>				
+            </ul>
+            <h3>搜索宝贝</h3>
+            <div id="newsletter">
+                <form action="products.html" method="get">
+                  <input type="text" value="输入宝贝名称" name="email_newsletter" id="email_newsletter" title="email_newsletter" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                  <input type="submit" name="subscribe" value="搜索" alt="Subscribe" id="subscribebtn" title="Subscribe" class="subscribebtn"  />
+              </form>
+                <div class="cleaner"></div>
+            </div>
+      </div> 
+        
+        <div id="content">
+       	  <table width="100%" border="0" cellpadding="0" cellspacing="10" class="STYLE1">
+            <tr>
+              <td colspan="9"><h2>所有宝贝</h2></td>
+            </tr>
+            <tr>
+              <td height="30" colspan="9" class="STYLE1">化妆品功效：　 保湿(512)　补水(505)　美白(202)　提拉紧致(155)　滋润(84)　抗氧化(63)</td>
+            </tr>
+            <tr>
+              <td height="30" colspan="9">品牌： Skin food(194)　innisfree/悦诗风吟(151)　Etude/爱丽(99)　other/其他(98)　DeBon/蝶妆(75)L　aneige/兰芝(69)<br />
+                <br /></td>
+            </tr>
+            <tr>
+              <td height="30" colspan="9">规格： 正常规格(593)　小样/中样(122)<br /></td>
+            </tr>
+            <tr>
+              <td height="30" colspan="9">颜色分类： 天蓝色(192)　军绿色(165)　巧克力色(116)　桔色(73)　浅灰色(51)　浅绿色(45)<br /></td>
+            </tr>
+            <tr>
+              <td height="30" colspan="9">适合肤质： 所有肤质(482)　中性及干性肤质(92)</td>
+            </tr>
+            <tr>
+              <td height="30" colspan="9">共搜索到 1266 个符合条件的商品。 　关键字：
+                <label>
+                <input name="textfield" type="text" size="15" />
+              价格：
+              <input name="textfield2" type="text" size="6" />
+              到
+              <input name="textfield3" type="text" size="6" />
+              <input type="submit" name="subscribe" value="搜索" alt="Subscribe" id="subscribebtn" title="Subscribe"  />
+              </label></td>
+            </tr>
+            <tr>
+              <td width="100" height="30">排序：</td>
+              <td width="35" align="center" bgcolor="#EAEAEA"><a href="#">人气</a></td>
+              <td width="35" align="center" bgcolor="#EAEAEA"><a href="#">销量</a></td>
+              <td width="35" align="center" bgcolor="#EAEAEA"><a href="#">新品</a></td>
+              <td width="35" align="center" bgcolor="#EAEAEA"><a href="#">价格</a></td>
+              <td width="35" align="center" bgcolor="#EAEAEA"><a href="#">收藏</a></td>
+              <td align="right">1/47</td>
+              <td width="40" bgcolor="#EAEAEA">上一页</td>
+              <td width="40" bgcolor="#EAEAEA">下一页</td>
+            </tr>
+          </table>
+       	  <div class="col col_14 product_gallery">
+            	<a href="p0.html" ><img src="../images/product/01.jpg" alt="Product 01" /></a>
+                <h3>包邮 IOPE亦博气垫粉底霜 液体湿粉饼 隔离 bb霜 防晒乳 送替换装<br />
+                </h3>
+                <p class="product_price">￥100.00 <span class="more STYLE1">已售：2195件</span><br />
+                  <span class="STYLE1">评论</span>(1363)</p>
+          <a href="shoppingcart.html" class="add_to_cart"></a>          </div>        	
+            <div class="col col_14 product_gallery"> <img src="../images/product/02.jpg" alt="Product 02" />
+                <h3>正品 tonymoly 魔法森林蜗牛面膜贴 美白保湿 祛痘疤祛斑 5片包邮</h3>
+                <p class="product_price">￥200.00 <span class="STYLE1">已售：2195件</span><br />
+                <span class="STYLE1">评论</span>(1363)</p>
+          <a href="shoppingcart.html" class="add_to_cart"></a>          </div>        	
+            <div class="col col_14 product_gallery no_margin_right">
+            	<p><img src="../images/product/03.jpg" alt="Product 03" /></p>
+            	<p>&nbsp; </p>
+            	<h3>现货 正品 LANEIGE兰芝新概念BB水凝霜 气垫粉底霜湿粉饼送替换装</h3>
+                <span class="product_price">¥120.00</span><span class="STYLE1"> 已售：2195件</span><br />
+                <span class="product_price"><span class="STYLE1">评论</span>(447)</span></div>        	
+            <div class="col col_14 product_gallery"> <img src="../images/product/04.jpg" alt="Product 04" />
+                <h3>韩国代购正品 missha 谜尚迷尚 幻金凝彩完美抗皱bb霜 裸妆 遮瑕</h3>
+                <h3><span class="product_price">￥148.00</span><span class="STYLE1"> 已售：106件</span><br />
+                  <span class="product_price"><span class="STYLE1">评论</span>(240)</span><br />
+                </h3>
+          </div>        	
+            <div class="col col_14 product_gallery"> <img src="../images/product/05.jpg" alt="Product 05" />
+                <h3>3只包邮 代购正品 peripera 猫女染色液体唇彩 唇水 唇液 6.5ml</h3>
+                <h3><span class="product_price">￥48.00</span> 已售：93件<br />
+                <span class="product_price"><span class="STYLE1">评论</span>(336)</span></h3>
+          </div>        	
+            <div class="col col_14 product_gallery no_margin_right"> <img src="../images/product/06.jpg" alt="Product 06" />
+                <h3>谜尚迷尚missha 完美红色全效bb霜 防晒裸妆遮瑕强 韩国正品13号</h3>
+                <h3><span class="product_price">￥78.00</span> 已售：67件<br />
+                  <span class="product_price"><span class="STYLE1">评论</span>(312)</span><br />
+                </h3>
+          </div>        	
+            <div class="col col_14 product_gallery"> <img src="../images/product/07.jpg" alt="Product 07" />
+                <h3>现货 韩国代购正品 雪花秀 滋阴水 乳液125ml两件套装礼盒 2件套</h3>
+                <h3><span class="product_price">￥578.00</span> 已售：88件<br />
+                  <span class="product_price"><span class="STYLE1">评论</span>(167)</span><br />
+                </h3>
+          </div>        	
+            <div class="col col_14 product_gallery"> <img src="../images/product/08.jpg" alt="Product 08" />
+                <h3>现货 张馨予推荐too cool for school彩妆早上好牛奶染色唇彩唇液</h3>
+                <h3><span class="product_price">￥39.00</span> 已售：81件<br />
+                <span class="product_price"><span class="STYLE1">评论</span>(118)</span></h3>
+          </div>            <div class="col col_14 product_gallery no_margin_right"> <img src="../images/product/09.jpg" /><h3>Laneige兰芝 雪纱防晒隔离霜30ML 防辐射 紫色 绿色 专柜正品代购</h3>
+                <h3><span class="product_price">￥115.00 </span>已售：101件<br />
+                <span class="product_price"><span class="STYLE1">评论</span>(112)</span></h3>
+          </div>        	
+      </div> <!-- END of content -->
+        <div class="cleaner"></div>
+  </div> <!-- END of main -->
+    
+    <div id="footer">
+      <div class="cleaner h40"></div>
+		<center>
+	  </center>
+    </div> 
+   
+</div>
+
+</body>
+</html>

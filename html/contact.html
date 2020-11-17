@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>化妆品商城</title>
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="../css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/ddsmoothmenu.js">
+
+
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "menu", 
+	orientation: 'h', 
+	classname: 'ddsmoothmenu', 
+	
+	contentsource: "markup" 
+})
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="../style/default_blue.css"/>
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/ddsmoothmenu.js">
+
+
+<script language="javascript" type="text/javascript">
+	window.addEvents({
+		'domready': function(){
+			
+			new SlideItMoo({
+						overallContainer: 'SlideItMoo_outer',
+						elementScrolled: 'SlideItMoo_inner',
+						thumbsContainer: 'SlideItMoo_items',		
+						itemsVisible: 5,
+						elemsSlide: 2,
+						duration: 200,
+						itemsSelector: '.SlideItMoo_element',
+						itemWidth: 171,
+						showControls:1});
+		},
+		
+	});
+
+	function clearText(field)
+	{
+		if (field.defaultValue == field.value) field.value = '';
+		else if (field.value == '') field.value = field.defaultValue;
+	}
+</script>
+
+<style type="text/css">
+<!--
+.STYLE1 {color: #999999}
+table tr td{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.STYLE2 {
+	font-size: 14px;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body id="home">
+
+<div id="wrapper">
+	<div id="header">
+    	<div id="site_title">
+   	  </div>
+    	<a name="top" id="top"></a>
+        
+        <div id="header_right">
+            <ul id="language">
+                <li><a href="login.html">登录</a></li>
+                <li><a href="register.html">注册</a></li>
+                <li><a href="mycart.html">我的购物车</a></li>
+                <li><a href="xiugai.html">修改密码</a></li>
+            </ul>
+            <div class="cleaner"></div>
+            <div id="search">
+                <form action="products.html" method="get">
+                  <input type="text" value="搜索宝贝" name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                  <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+              </form>
+            </div>
+      </div> 
+    </div> 
+    
+    <div id="menu" class="ddsmoothmenu">
+         <ul>
+        <li><a href="../index.html" >首页</a></li>
+        <li><a href="products.html" class="selected" >产品分类</a>
+            <ul >
+              <li><a href="#">新品热卖</a></li>
+              <li><a href="#">当季热卖</a><a href="#">面霜</a><a href="#">护手霜</a> <a href="#">唇膏</a> <a href="#">身体乳</a> <a href="#">BB霜</a> </li>
+              <li><a href="#">iope雪花秀</a> </li>
+              <li><a href="#">laneige兰芝</a></li>
+              <li><a href="#">espoir</a></li>
+              <li><a href="#">悦诗风吟</a></li>
+              <li><a href="#">爱丽小屋</a></li>
+            </ul>
+        </li>
+        <li><a href="#">iope雪花秀</a> </li>
+        <li><a href="#">laneige兰芝</a></li>
+        <li><a href="#">espoir</a></li>
+        <li><a href="#">悦诗风吟</a></li>
+        <li><a href="#">爱丽小屋</a></li>
+      </ul>
+        <br style="clear: left" />
+  </div> 
+    
+    <div id="main_top"></div>
+    <div id="main">
+      <div id="sidebar">
+        	<h3>宝贝分类</h3>
+            <ul class="sidebar_menu">
+			    <li><a href="#">新品热卖</a></li>
+                <li><a href="#">当季热卖</a></li>	
+			  <ul>
+				<li><a href="#">面霜</a></li>
+				<li><a href="#">护手霜</a></li>
+				<li><a href="#">唇膏</a></li>
+				<li><a href="#">身体乳</a></li>
+				<li><a href="#">BB霜</a></li>
+				
+			  </ul>			
+                <li><a href="#">iope雪花秀</a><a href="#"></a></li>
+                <li><a href="#">laneige兰芝</a><a href="#"></a></li>				
+            	<li><a href="#">espoir</a><a href="#"></a></li>
+              <li><a href="#">悦诗风吟</a><a href="#"></a></li>     
+                <li><a href="#">爱丽小屋</a></li>				
+            </ul>
+            <h3>搜索宝贝</h3>
+            <div id="newsletter">
+                <form action="products.html" method="get">
+                  <input type="text" value="输入宝贝名称" name="email_newsletter" id="email_newsletter" title="email_newsletter" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                  <input type="submit" name="subscribe" value="搜索" alt="Subscribe" id="subscribebtn" title="Subscribe" class="subscribebtn"  />
+              </form>
+                <div class="cleaner"></div>
+            </div>
+      </div> 
+        
+        <div id="content">
+       	  <table width="100%" border="0" cellpadding="0" cellspacing="10" class="STYLE1">
+            <tr>
+              <td height="30" colspan="9"><span class="STYLE2">在线留言</span></td>
+            </tr>
+            <tr>
+              <td height="30" colspan="9" class="STYLE1">标题：
+                <label>
+                <input type="text" name="textfield" />
+              </label></td>
+            </tr>
+            <tr>
+              <td height="30" colspan="9" class="STYLE1">内容：
+                <textarea name="textfield2" cols="60" rows="8"></textarea></td>
+            </tr>
+            <tr>
+              <td height="30" colspan="9" ><a href="#" class="more">提交</a></td>
+            </tr>
+            <tr>
+              <td height="30" colspan="9" class="STYLE1">&nbsp;</td>
+            </tr>
+          </table>
+   	  </div>
+        <!-- END of content -->
+        <div class="cleaner"></div>
+  </div> <!-- END of main -->
+    
+    <div id="footer">
+      <div class="cleaner h40"></div>
+		<center>
+	  </center>
+    </div> 
+   
+</div>
+
+</body>
+</html>

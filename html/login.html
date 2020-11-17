@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>化妆品商城</title>
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="../css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/ddsmoothmenu.js">
+
+
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "menu", 
+	orientation: 'h', 
+	classname: 'ddsmoothmenu', 
+	
+	contentsource: "markup" 
+})
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="../style/default_blue.css"/>
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/ddsmoothmenu.js">
+
+
+<script language="javascript" type="text/javascript">
+	window.addEvents({
+		'domready': function(){
+			
+			new SlideItMoo({
+						overallContainer: 'SlideItMoo_outer',
+						elementScrolled: 'SlideItMoo_inner',
+						thumbsContainer: 'SlideItMoo_items',		
+						itemsVisible: 5,
+						elemsSlide: 2,
+						duration: 200,
+						itemsSelector: '.SlideItMoo_element',
+						itemWidth: 171,
+						showControls:1});
+		},
+		
+	});
+
+	function clearText(field)
+	{
+		if (field.defaultValue == field.value) field.value = '';
+		else if (field.value == '') field.value = field.defaultValue;
+	}
+</script>
+
+<style type="text/css">
+<!--
+.STYLE1 {color: #999999}
+-->
+</style>
+</head>
+
+<body id="home">
+
+<div id="wrapper">
+	<div id="header">
+    	<div id="site_title">
+   	  </div>
+    	<a name="top" id="top"></a>
+        
+        <div id="header_right">
+            <ul id="language">
+                <li><a href="login.html">登录</a></li>
+                <li><a href="register.html">注册</a></li>
+                <li><a href="mycart.html">我的购物车</a></li>
+                 <li><a href="xiugai.html">修改密码</a></li>
+            </ul>
+            <div class="cleaner"></div>
+            <div id="search">
+                <form action="#" method="get">
+                  <input type="text" value="搜索宝贝" name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                  <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+                </form>
+            </div>
+      </div> 
+    </div> 
+    
+    <div id="menu" class="ddsmoothmenu">
+         <ul>
+        <li><a href="../index.html" >首页</a></li>
+        <li><a href="products.html" class="selected" >产品分类</a>
+            <ul >
+              <li><a href="#">新品热卖</a></li>
+              <li><a href="#">当季热卖</a><a href="#">面霜</a><a href="#">护手霜</a> <a href="#">唇膏</a> <a href="#">身体乳</a> <a href="#">BB霜</a> </li>
+              <li><a href="#">iope雪花秀</a> </li>
+              <li><a href="#">laneige兰芝</a></li>
+              <li><a href="#">espoir</a></li>
+              <li><a href="#">悦诗风吟</a></li>
+              <li><a href="#">爱丽小屋</a></li>
+            </ul>
+        </li>
+        <li><a href="#">iope雪花秀</a> </li>
+        <li><a href="#">laneige兰芝</a></li>
+        <li><a href="#">espoir</a></li>
+        <li><a href="#">悦诗风吟</a></li>
+        <li><a href="#">爱丽小屋</a></li>
+      </ul>
+        <br style="clear: left" />
+  </div> 
+    
+    <div id="main_top"></div>
+    <div id="main">
+      <!-- END of content -->
+<div class="cleaner">
+  <table width="500" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="50">登陆名：</td>
+      <td><input name="text4" type="text"  style="width:200px; height:25px" /></td>
+    </tr>
+    <tr>
+      <td height="50">登陆密码：</td>
+      <td><input name="text42" type="text"  style="width:200px; height:25px" /></td>
+    </tr>
+    <tr>
+      <td height="50" colspan="2" align="left"><input name="checkbox2" type="checkbox" />
+        安全控件登陆</td>
+      </tr>
+    <tr>
+      <td height="50" colspan="2" align="center"><a href="#" class="more">　　登陆　　</a></td>
+      </tr>
+    <tr>
+      <td height="50">&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+  </div> <!-- END of main -->
+    
+    <div id="footer">
+      <div class="cleaner h40"></div>
+		<center>
+	  </center>
+    </div> 
+   
+</div>
+
+</body>
+</html>
